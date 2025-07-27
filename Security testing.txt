@@ -1,0 +1,80 @@
+Security testing
+URL Manupulation
+Session Expiry
+Privilege Elevation
+SQL Injection
+Cookies Based Testing
+Session Cookies
+Persistent Cookies
+Cross-site report forgery(CSRF) = Checking URL Navigation paths like ?username%Password, whether these all are encrypted if that path is showing without encryption that is security defect. Hackers might can get the bank acc numbers all they can able to get.
+Cross-site scripting(XSS)= XSS is a vulnerability where an attacker injects malicious scripts (usually JavaScript) into a web page, which is then executed in another user's browser. It can lead to session hijacking, data theft, or phishing.. Like some random popup saying like click me- (Injecting malicious scripts into a web page viewed by others)
+   Example(Normal Comment in a Blog: <script>alert('Hacked!');</script> displays this comment directly without filtering, then any user who views that page will see a popup — and worse, more harmful scripts could run silently.)
+Prevention: Use Security Libraries: Like OWASP Java Encoder or frameworks with built-in XSS protection.
+
+What is security testing? Why is it important?
+Expected Answer:
+Security testing is done to identify vulnerabilities in software that may lead to data breaches or unauthorized access. It's important to ensure confidentiality, integrity, and availability of data and systems.
+
+What is Penetration Testing?
+Penetration Testing, also known as Pen Testing or Ethical Hacking, is a security testing technique where authorized testers simulate real cyberattacks to find and fix vulnerabilities in software, systems, or networks.
+
+Have you ever done any basic security testing in your project?If yes, explain like:
+I validated login/authentication flows, ensured secure password policies, checked if sensitive data like tokens or passwords are masked or encrypted, and ran basic scans using OWASP ZAP or Burp Suite.
+
+
+What are the different types of security testing?
+Expected Answer:
+Vulnerability scanning
+Penetration testing
+Risk assessment
+Security auditing
+Ethical hacking
+Posture assessment
+
+
+Security Testing = Prevention + Detection + Testing
+Penetration Testing = Simulated Attack to Test Defense
+
+What is the difference between security testing and penetration testing?
+Expected Answer:
+Security testing is a broad process to find all potential vulnerabilities, while penetration testing is a specific technique that simulates real-world attacks to check if those vulnerabilities can be exploited.
+
+
+Real Time Example:
+Security Testing is like checking the doors, windows, and locks of your house to ensure they are strong.
+
+Penetration Testing is like hiring a burglar to try breaking in, so you can see how secure your house really is.
+
+Security Testing,
+Security Testing is a broad process used to make sure that software or applications are safe from threats or attacks.
+
+Goal of Security Testing:
+To find and fix weaknesses (vulnerabilities) that could let unauthorized users:
+
+Steal data
+Modify information
+Crash the system
+Gain unauthorized access
+
+Example Tasks in Security Testing:
+Making sure users can't log in without the correct password.
+Checking that sensitive data (like credit card numbers) is encrypted.
+Verifying that user roles and permissions work properly.
+Ensuring session tokens expire after logout.
+Tools: 	Burp Suite, ZAP, Nessus, Fortify
+
+Penetration Testing,
+Penetration Testing (or Pen Testing) is a type of security testing where a tester pretends to be a hacker and tries to break into the system.
+
+Goal of Penetration Testing:
+To simulate a real-world cyberattack and find out:
+How easily a hacker can get in
+What damage they could do
+Where the system is vulnerable
+
+Example Pen Testing Scenarios:
+Trying to bypass login without knowing the password.
+Attempting SQL Injection to pull data from the database.
+Running cross-site scripting (XSS) attacks to manipulate web pages.
+Testing how the system reacts to denial-of-service (DoS) attacks.
+Tools: Burp Suite, Metasploit, Kali Linux, Nmap
